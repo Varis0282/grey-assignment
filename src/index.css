@@ -36,10 +36,20 @@ button:hover {
 input[type='number'],
 input[type='text'],
 input[type='password'] {
-  padding: 0.5rem;
+  padding: 0.75rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-right: 0.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='number']:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
 }
 
 .login-container {
